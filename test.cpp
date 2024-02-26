@@ -11,5 +11,15 @@ int main(){
         cin.getline(words[i],50);
     }
 
+    char* res[5];
+    int count {0};
+
+    for(int i {0}; i < 5; i++){
+        int j{0};
+        while(words[i][j] != '\0' && j < 4) j++;
+
+        if(j < 4) res[count++] = words[i];
+    }
+    
     return 0;
 }

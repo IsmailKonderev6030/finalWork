@@ -20,6 +20,9 @@ int main(){
 
         if(j < 4) res[count++] = words[i];
     }
+
+     for(int i {0}; i < count; i++)
+        cout<<res[i]<<' ';
     
     return 0;
 }
